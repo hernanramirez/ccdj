@@ -57,7 +57,7 @@ SECURE_CONTENT_TYPE_NOSNIFF = env.bool(
 
 # STATIC
 # ------------------------
-#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+COLLECTFAST_STRATEGY = "django.core.files.storage.FileSystemStorage"
 STATIC_ROOT = env("STATIC_ROOT")
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
